@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Horta Automática</title>
+    <meta name="description" content="a">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+
+  
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top" style="font-family: Montserrat, sans-serif;color: #fed136;font-weight: 800;">Horta Automática</a>
+            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="#services">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">funcionamento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">componentes</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="leitura.html">leitura</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: url(&quot;assets/img/uuu.jpg&quot;);">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in"><span>Bem-vindo ao nosso sistema!</span></div>
+                <div class="intro-heading text-uppercase"><span>Horta automática</span></div><a class="btn btn-primary btn-xl text-uppercase" role="button" href="#services" style="background: #fed136;">Saiba mais</a>
+            </div>
+        </div>
+    </header>
+    <section id="services" style="transform: scale(1.05);padding: 150px 0px;">
+        <div class="container" style="transform: translateY(50px);">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading" style="font-size: 50px;">Nosso projeto</h2>
+                    <p style="font-size: 25px;font-family: Montserrat, sans-serif;color: rgb(0,0,0);font-weight: 400;transform: translateY(30px);">Um&nbsp;<a href="#about" style="text-decoration: none;color: #fed136;">Sistema</a>&nbsp;composto por um microcontrolador ESP32 integrado com sensores de umidade do solo, temperatura e umidade do ar, que monitoram os aspectos físicos da horta e, se necessário, acionam uma válvula solenoide que libera o fluxo de água para o sistema de irrigação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase" style="font-size: 50px;">como ele funciona?</h2>
+                    <h3 class="text-muted section-subheading">Etapas de funcionamento do nosso sistema</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-group timeline">
+                        <li class="list-group-item">
+                            <div class="timeline-image" style="background: rgb(72,78,84);"><img class="rounded-circle img-fluid" src="assets/img/about/Prancheta%201.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Ligação do Sistema</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">O ESP32, juntamente com todo os componentes iniciam e os sensores começam a captar os dados correspondentes.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image" style="background: rgb(72,78,84);"><img class="rounded-circle img-fluid" src="assets/img/about/Prancheta%201%20copiar.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Conexão com o servidor</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">O ESP se conecta com a base de dados, e passa a enviar os dados fornecidos pelos sensores até lá. Esses dados são armazenados e enviados ao nosso&nbsp;<a href="leitura.html" style="text-decoration: none;border-color: #fed136;">site</a>, onde você pode visualiza-los.&nbsp;</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="timeline-image" style="background: rgb(72,78,84);"><img class="rounded-circle img-fluid" src="assets/img/about/Prancheta%201%20copiar%202.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Manipulação dos dados</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted" style="text-align: right;">Se os dados obtidos pelos sensores não estiverem de acordo com o programado para a plantação, o nosso programa altera o modo de irrigação, minimizando os riscos e evitando a fadiga manual que esse processo exige.&nbsp;</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image" style="background: rgb(72,78,84);"><img class="rounded-circle img-fluid" src="assets/img/about/sjdpaoddmas.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading" style="width: 329.438px;">Controle da sua plantação</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Além da possibilidade do monitoramento em tempo real, você tem a opção de desligar remotamente todo o sistema de irrigação da sua horta, de onde você estiver!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image"><a class="btn btn-primary" role="button" href="leitura.html" style="width: 155px;height: 155px;margin-top: 0px;line-height: 45px;transition: background .3s ease-in-out;border-radius: 100% !important;background: transparent;padding: 23px 12px;transform: translateY(0px);border: 2px solid #fed136 ;"><h4 class="monitoramento_btn">Monitore sua horta!</h4>
+ </a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading" style="font-size: 50px;">componentes</h2>
+                    <h3 class="text-muted section-subheading">Os componentes que utilizamos no projeto</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal1" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/esp32.jpg">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>ESP32</h4>
+                        <p class="text-muted">Microcontrolador</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal2" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/c1c5edbb13.jpg">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Umidade do Solo</h4>
+                        <p class="text-muted">Sensor capacitivo de umidade do solo</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal3" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/dht22.png">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>DHT22</h4>
+                        <p class="text-muted">Sensor de temperatura e umidade do ar</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal4" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/258_1_H.png">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Relé</h4>
+                        <p class="text-muted">Módulo relé</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal5" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/D_NQ_NP_886941-MLB41846849598_052020-O.jpg">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Válvula</h4>
+                        <p class="text-muted">Válvula Solenoide</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal6" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/microestatico%20duro%20preto-500x500.jpg">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Microaspersor</h4>
+                        <p class="text-muted">Microaspersor 360º</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><span class="copyright">Instituto Federal de São Paulo - Campus Registro</span></div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">esp32 wi-fi mcu</h2>
+                                <p class="text-muted item-intro">Microcontrolador de todo o sistema</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/esp32.jpg" style="transform: scale(0.90);">
+                                <p>O ESP32 é um microcontrolador de alta velocidade e baixíssimo consumo de energia. O selecionamos pelo seu baixo custo e por possuir um módulo&nbsp; Wi-fi, no qual facilita muito todo o processo de automação do nosso projeto. Essa função possibilita que enviemos as medias obtidas pelos sensores até a DataBase, onde armazenamos e redirecionamos para o a&nbsp;<a href="leitura.html" style="text-decoration: none;">aba</a>&nbsp;de monitoramento da horta.</p>
+                                <ul class="list-unstyled">
+                                    <li style="font-weight: bold;">Preço: R$ 39,90</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times" style="width: 32px;"></i><span>Fehar painel</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">sENSOR CAPACITIVO DO SOLO</h2>
+                                <p class="text-muted item-intro">Sensor para medição da umidade do solo</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/c1c5edbb13.jpg">
+                                <p>Com o sensor capacitivo de umidade do solo é&nbsp; possível verificar a umidade do solo, operando na mesma tensão do ESP32 sem a necessidade de resistores adicionais. Possui maior resistência à corrosão, pois seu princípio de funcionamento não é baseado na resistividade do solo alterada com a umidade, e sim na mudança de capacitância.</p>
+                                <ul class="list-unstyled">
+                                    <li style="font-weight: bold;">Preço: R$ 40,00</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times" style="width: 32px;"></i><span>Fechar painel</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto" style="transform: scale(1.15);">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">DHT22</h2>
+                                <p class="text-muted item-intro">Sensor de umidade e temperatura do ar</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/dht22.png">
+                                <p style="transform: translateY(-65px);">O DHT22 faz leituras entre -40 a +80º Celsius e umidade de 0 a 100%. É formado por um sensor de umidade capacitivo e um termístor para medir o ar ao redor, enviando no pino de dados um sinal digital.</p>
+                                <ul class="list-unstyled">
+                                    <li style="font-weight: bold;transform: translateY(-65px);">Preço: R$ 45,74</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal" style="transform: translateY(-65px);"><i class="fa fa-times" style="width: 32px;"></i><span>Fechar Painel</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">mÓDOLO RELÉ</h2>
+                                <p class="text-muted item-intro">Módulo relé para ativação da válvula</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/258_1_H.png">
+                                <p>O módulo relé permite o controlar diversos componentes utilizando apenas um pino de controle. Utilizamos esse componente para a ativação da válvula solenoide que trabalha em alta tensão, não suportada pelo ESP32, havendo a necessidade da utilização do relé para o acionamento da mesma.&nbsp;</p>
+                                <ul class="list-unstyled">
+                                    <li style="font-weight: bold;">Preço: 8,90</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times" style="width: 32px;"></i><span>Fechar painel</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal5">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Válvula</h2>
+                                <p class="text-muted item-intro">Válvula solenoide para o controle do sistema hídrico</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/D_NQ_NP_886941-MLB41846849598_052020-O.jpg">
+                                <p>Essa válvula é um mecanismo eletrônico, que tem a função de liberar o fluxo de água para o sistema de irrigação, acionadas com a excitação da bobina com uma tensão de 110VAC por meio do relé, manualmente ou automaticamente (com base nos dados fornecidos pelos sensores).<br></p>
+                                <ul class="list-unstyled">
+                                    <li style="font-weight: bold;">Preço: 39,80</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times" style="width: 32px;"></i><span>Fechar painel</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Microaspersor</h2>
+                                <p class="text-muted item-intro">Componente para irrigação da horta</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/D_NQ_NP_820392-MLB26413294166_112017-O.jpg" style="transform: scale(1);">
+                                <p>O microaspersor é um emissor que lança gotículas de água e propiciam uma precipitação mais suave e uniforme que a aspersão, operando com asas giratórias. Será acionado de forma automática pela válvula solenoide ou manualmente por um comando fornecido pelo usuário nessa&nbsp;<a href="leitura.html" style="text-decoration: none;">aba</a>.</p>
+                                <ul class="list-unstyled">
+                                    <li style="font-weight: bold;">Preço: R$ 2,90&nbsp;</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times" style="width: 32px;"></i><span>Fechar Painel</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+    
+</body>
+
+</html>
